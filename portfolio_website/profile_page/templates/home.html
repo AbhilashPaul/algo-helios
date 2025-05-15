@@ -1,0 +1,24 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    {% tailwind_css %}
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-lg w-full text-center">
+        <img src="{% static 'headshot.jpeg' %}" alt="Headshot"
+             class="mx-auto w-32 h-32 rounded-full border-4 border-blue-500 shadow mb-4">
+        <h1 class="text-4xl font-bold text-blue-700 mb-2">About Me</h1>
+        <p class="text-gray-700 mb-4">
+            Hello! I'm <span class="font-semibold">Abhilash Paul</span>, a web developer based in Calgary.
+        </p>
+        <a href="mailto:your.email@example.com"
+           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition">
+            Contact Me
+        </a>
+    </div>
+</body>
+</html>
+
